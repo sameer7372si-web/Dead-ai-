@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050505;
+  color: white;
+  height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 950px;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #0b0b0b;
+}
+
+
+/* HEADER */
+
+.header {
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 20px;
+
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #181818;
+
+  font-size: 23px;
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+.header p {
+  color: #888;
+
+  font-size: 12px;
+
+  margin-top: 3px;
+}
+
+.status {
+  margin-left: auto;
+
+  color: #7cff7c;
+
+  font-size: 12px;
+}
+
+
+/* CHAT */
+
+#chat {
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 25px;
+}
+
+.message {
+  max-width: 80%;
+
+  padding: 14px 17px;
+
+  margin-bottom: 18px;
+
+  border-radius: 16px;
+
+  line-height: 1.5;
+}
+
+.message p {
+  margin-top: 7px;
+}
+
+.ai {
+  background: #191919;
+}
+
+.user {
+  background: #292929;
+
+  margin-left: auto;
+}
+
+
+/* INPUT */
+
+.input-area {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 15px;
+
+  border-top: 1px solid #222;
+}
+
+input {
+  flex: 1;
+
+  padding: 15px;
+
+  border: 1px solid #292929;
+
+  outline: none;
+
+  border-radius: 13px;
+
+  background: #151515;
+
+  color: white;
+
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #555;
+}
+
+button {
+  width: 52px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background: white;
+
+  color: black;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .message {
+    max-width: 90%;
+  }
+
+  #chat {
+    padding: 15px;
+  }
+
+  .header {
+    padding: 12px 15px;
+  }
+
+}
